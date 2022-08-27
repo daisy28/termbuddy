@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+<link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/nav.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navigation nav">
+        <div class="user">
+            <div class="img-container">
+                <img src="/images/web logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="menu-toggle"></div>
+        
+        <ul class="menu">
+          <li class="homepage">
+            <a href="#" class="header-links">Termbuddy</a>
+          </li>
+          <div class="nav-list">
+            <li>
+              <a href="/index.html" class="header-links">
+                <span class="header-icon"><i class="fa-solid fa-circle-info"></i></span>
+                <span>About</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href="/contact.html" class="header-links">
+                <span class="header-icon"><i class="fa-solid fa-message"></i></span>
+                <span>Contact</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href="/product.html" class="header-links">
+                <span class="header-icon"><i class="fa-brands fa-product-hunt"></i></span>
+                <span>Product</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href="/docs page.html" class="header-links">
+                <span class="header-icon"><i class="fa-solid fa-file"></i></span>
+                <span>Docs</span>
+              </a>
+            </li>
+          </div>
+          
+  
+          <div class="button-container">
+            <button class="signin-button"><a href="/login.html">Sign In</a></button>
+            <button class="signup-button"><a href="/signup.html">Sign up</a></button>
+          </div>
+          </ul>
+    </nav>
+    </header>
+    
+    <main>
+      <div class="main">
+        <div class="img-illustration">
+          <img
+            src="/images/signup img/signUp-amico.svg"
+            alt="image illustration of signup page"
+            class="img"
+          />
+        </div>
+
+        <div class="signup">
+           <h2>Sign up</h2>
+          <form action="" class="form">
+            <div class="form-div">
+                <label for="first-name">First Name</label>
+                <div class="icon">
+                  <img
+                    class="form-icons user1"
+                    src="/images/signup img/user.svg"
+                    alt="user icon"
+                  />
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    class="form-input"
+                    placeholder="John"
+                  />
+
+                  <label for="last-name">Last Name</label>
+                <div class="icon">
+                  <img
+                    class="form-icons user2"
+                    src="/images/signup img/user (1).svg"
+                    alt="user icon"
+                  />
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    class="form-input"
+                    placeholder="Doe"
+                  />
+              <label for="email">Email</label>
+              <div class="icon">
+                <img
+                  class="form-icons email"
+                  src="/images/signup img/sms.svg"
+                  alt="email icon"
+                />
+                <input
+                  type="email"
+                  name=""
+                  id="email"
+                  class="form-input"
+                  placeholder="johndoe@gmail.com"
+                />
+              </div>
+            </div>
+            <div class="form-div">
+              <label for="password">Password</label>
+              <div class="icon2">
+                <img
+                  src="/images/signup img/lock.svg"
+                  alt="a lock  icon for the password"
+                  class="img1 form-icons"
+                />
+                <img
+                  src="/images/signup img/eye-slash.svg"
+                  alt="password toggle"
+                  class="img2 form-icons"
+                />
+              </div>
+              <input
+                type="password"
+                name=""
+                id="password"
+                class="form-input password"
+                placeholder="********"
+              />
+            </div>
+
+            <div class="terms">
+              <div class="checkbox">
+                <input
+                  class="checkbox toggle"
+                  type="checkbox"
+                  name=""
+                  id="checkbox"
+                />
+              </div>
+              <label for="checkbox">I Agree to all the <a href=""> Terms and Conditions</a></label>
+            </div>
+
+
+            <div>
+              <button class="signup-btn">Sign up</button>
+            </div>
+            <div class="signup-option">
+              <h2>Or sign up with</h2>
+              <div class="signup-options">
+                <div class="btn-icon">
+                  <img src="/images/signup img/Group.svg" alt="google icon" />
+                  <p>Google</p>
+                </div>
+                <div class="btn-icon">
+                  <img src="/images/signup img/Apple (icon — Colour).svg" alt="apple icon" />
+                  <p>Apple</p>
+                </div>
+              </div>
+              <p class="signup-text">
+                Already have an account? <a href="/login.html" class="cta"><b>Sign in</b></a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let navigation = document.querySelector(".navigation");
+      let menuToggle = document.querySelector(".menu-toggle");
+      menuToggle.onclick = function(){
+          navigation.classList.toggle("active")
+      }
+  </script>
+  </body>
+</html>
